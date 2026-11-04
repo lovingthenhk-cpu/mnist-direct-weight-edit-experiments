@@ -22,15 +22,16 @@ def evaluate(path,split='dev',batch=32):
   idx=cp.argpartition(d,s-1,axis=1)[:,:s];d0=cp.take_along_axis(d,idx,axis=1)
   r=ref[idx].reshape(n,s,28,28);x=a.reshape(n,1,28,28)
   rx,ry=grad(r);xx,xy=grad(x)
-  rp=cp.pad(r,((0,0),(0,0),(1,1),(1,1)))
-  rpx=cp.pad(rx,((0,0),(0,0),(1,1),(1,1)))
-  rpy=cp.pad(ry,((0,0),(0,0),(1,1),(1,1)))
+  rad=p.get('local_shift_radius_literal',1)
+  rp=cp.pad(r,((0,0),(0,0),(rad,rad),(rad,rad)))
+  rpx=cp.pad(rx,((0,0),(0,0),(rad,rad),(rad,rad)))
+  rpy=cp.pad(ry,((0,0),(0,0),(rad,rad),(rad,rad)))
   best=cp.full(r.shape,cp.inf,dtype='f')
-  for dy in (-1,0,1):
-   for dx in (-1,0,1):
-    v=rp[:,:,1+dy:29+dy,1+dx:29+dx]
-    vx=rpx[:,:,1+dy:29+dy,1+dx:29+dx]
-    vy=rpy[:,:,1+dy:29+dy,1+dx:29+dx]
+  for dy in range(-rad,rad+1):
+   for dx in range(-rad,rad+1):
+    v=rp[:,:,rad+dy:rad+dy+28,rad+dx:rad+dx+28]
+    vx=rpx[:,:,rad+dy:rad+dy+28,rad+dx:rad+dx+28]
+    vy=rpy[:,:,rad+dy:rad+dy+28,rad+dx:rad+dx+28]
     dd=(x-v)**2
     dd+=p['image_gradient_x_weight_literal']*(xx-vx)**2
     dd+=p['image_gradient_y_weight_literal']*(xy-vy)**2
