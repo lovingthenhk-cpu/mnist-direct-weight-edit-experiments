@@ -1,0 +1,65 @@
+[
+  {
+    "experiment": "exp-001-handwritten-baseline",
+    "sha256": "c10a8419fd7a2590631c02e1c0b7fe1f289f842b8394f58e646beaa44b282c6e",
+    "weight_count": 1960,
+    "bias_count": 10,
+    "weight_l2_squared": 430.9375,
+    "weight_entries_changed_from_previous": null,
+    "bias_entries_changed_from_previous": null
+  },
+  {
+    "experiment": "exp-002-manual-bias-redistribution",
+    "sha256": "cf0d66aaa5edfa0d671cc22e16fdf514a44e95587e7195a136dccef7ad8d6691",
+    "weight_count": 1960,
+    "bias_count": 10,
+    "weight_l2_squared": 430.9375,
+    "weight_entries_changed_from_previous": 0,
+    "bias_entries_changed_from_previous": 8
+  },
+  {
+    "experiment": "exp-003-soft-hand-edited-stencils",
+    "sha256": "589e8fbc568a94170da48df4a15fea601142919984fb07cd1ebab1156696f9fe",
+    "weight_count": 1960,
+    "bias_count": 10,
+    "weight_l2_squared": 290.3507,
+    "weight_entries_changed_from_previous": 1960,
+    "bias_entries_changed_from_previous": 10
+  },
+  {
+    "experiment": "exp-004-targeted-bias-and-confusion",
+    "sha256": "5b523d5bd6583d8c99890de472eb4ac612ab9c42689763ee929b342e2f47baf6",
+    "weight_count": 1960,
+    "bias_count": 10,
+    "weight_l2_squared": 290.3507,
+    "weight_entries_changed_from_previous": 0,
+    "bias_entries_changed_from_previous": 3
+  },
+  {
+    "experiment": "exp-005-pixelwise-weight-edits",
+    "sha256": "0168e9652d38e58b6900b0da465f0df40581c3723627931ae8c8aa82c308d229",
+    "weight_count": 1960,
+    "bias_count": 10,
+    "weight_l2_squared": 314.7487,
+    "weight_entries_changed_from_previous": 33,
+    "bias_entries_changed_from_previous": 0
+  },
+  {
+    "experiment": "exp-006-selective-manual-undo",
+    "sha256": "6171b232548f676f3da425b274daf1284e15c3165b8899403b180e7887db12b9",
+    "weight_count": 1960,
+    "bias_count": 10,
+    "weight_l2_squared": 309.8706,
+    "weight_entries_changed_from_previous": 10,
+    "bias_entries_changed_from_previous": 0
+  },
+  {
+    "experiment": "exp-007-raise-class-7-bias",
+    "sha256": "0e21cda124834f8587de187dd018a92b3d0033d874b3b5de60a30fe6129c9cdd",
+    "weight_count": 1960,
+    "bias_count": 10,
+    "weight_l2_squared": 309.8706,
+    "weight_entries_changed_from_previous": 0,
+    "bias_entries_changed_from_previous": 1
+  }
+]
