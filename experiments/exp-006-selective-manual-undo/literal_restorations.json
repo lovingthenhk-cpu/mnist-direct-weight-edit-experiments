@@ -1,0 +1,72 @@
+[
+  {
+    "digit": 5,
+    "row_0based": 5,
+    "column_0based": 4,
+    "exp005_value": 1.1,
+    "restored_exp004_value": 0.35
+  },
+  {
+    "digit": 5,
+    "row_0based": 5,
+    "column_0based": 5,
+    "exp005_value": 1.5,
+    "restored_exp004_value": 1.2
+  },
+  {
+    "digit": 5,
+    "row_0based": 5,
+    "column_0based": 8,
+    "exp005_value": -0.65,
+    "restored_exp004_value": 0.15
+  },
+  {
+    "digit": 5,
+    "row_0based": 6,
+    "column_0based": 4,
+    "exp005_value": 1.25,
+    "restored_exp004_value": 0.6
+  },
+  {
+    "digit": 5,
+    "row_0based": 6,
+    "column_0based": 7,
+    "exp005_value": -0.55,
+    "restored_exp004_value": 0.6
+  },
+  {
+    "digit": 5,
+    "row_0based": 6,
+    "column_0based": 8,
+    "exp005_value": -0.6,
+    "restored_exp004_value": 0.6
+  },
+  {
+    "digit": 7,
+    "row_0based": 7,
+    "column_0based": 5,
+    "exp005_value": -0.55,
+    "restored_exp004_value": -0.12
+  },
+  {
+    "digit": 7,
+    "row_0based": 7,
+    "column_0based": 6,
+    "exp005_value": -0.55,
+    "restored_exp004_value": 0.15
+  },
+  {
+    "digit": 7,
+    "row_0based": 11,
+    "column_0based": 4,
+    "exp005_value": 0.7,
+    "restored_exp004_value": 0.15
+  },
+  {
+    "digit": 7,
+    "row_0based": 12,
+    "column_0based": 4,
+    "exp005_value": 0.65,
+    "restored_exp004_value": 0.15
+  }
+]
