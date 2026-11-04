@@ -1,0 +1,26 @@
+{
+  "experiment": "exp-015-edge-oriented-manual-metric",
+  "preprocessing": "deskew_gaussian_28x28",
+  "shortlist_literal": 80,
+  "number_of_neighbors_literal": 3,
+  "image_gradient_x_weight_literal": 2.5,
+  "image_gradient_y_weight_literal": 2.5,
+  "shift_penalty_literal": 0.004,
+  "global_distance_weight_literal": 0.12,
+  "local_distance_weight_literal": 0.88,
+  "distance_epsilon_literal": 0.1,
+  "class_bias_literals": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "note": "LLM specified all coefficients before evaluation; reference 55k images are stored data, not human-written weight matrices. No optimization.",
+  "gaussian_sigma_literal": 0.65
+}
