@@ -35,7 +35,7 @@ def features(img,manual):
     mode=manual['preprocessing']
     img=img.astype(np.float32)/255.0
     if mode=='raw_28x28':return img.reshape(-1,784)
-    if mode=='deskew_28x28':
+    if mode in ('deskew_28x28','deskew_gaussian_28x28'):
         import scipy.ndimage as ndi
         out=np.empty_like(img)
         yy,xx=np.mgrid[:28,:28]
@@ -48,6 +48,8 @@ def features(img,manual):
             # Derive output rows from input with deskew row-wise shift.
             # x_input = x_output + skew * (row - center)
             out[n]=ndi.affine_transform(m,[[1.,0.],[skew,1.]],offset=[0.,-skew*13.5],order=1,mode='constant',cval=0.)
+        if mode=='deskew_gaussian_28x28':
+            out=ndi.gaussian_filter(out,sigma=(0,0.65,0.65))
         return out.reshape(-1,784)
     raise ValueError(mode)
 
