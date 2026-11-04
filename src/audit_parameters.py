@@ -7,6 +7,9 @@ paths=sorted((ROOT/'experiments').glob('exp-*/parameters.json'))
 rows=[]
 for i,p in enumerate(paths):
  d=json.loads(p.read_text())
+ if 'weights' not in d:
+  print('SKIP nonparametric reference model',d['experiment'])
+  continue
  w=d['weights'];b=d['biases']
  assert len(w)==10 and all(len(x)==196 for x in w) and len(b)==10
  now=sum(x*x for row in w for x in row)

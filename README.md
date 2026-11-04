@@ -39,3 +39,7 @@ Each PR should contain: an immutable copy of the full model, metrics, a named ch
 **Final (frozen EXP007) official 10,000-image test accuracy: 74.90% (7490/10000)**.
 
 All model experiments were first reviewed as GitHub pull requests, then merged into the single repository. The final test was run once only after the best checkpoint was selected on the development set; see [`validation/README.md`](validation/README.md) and [`validation/final_mnist_test.json`](validation/final_mnist_test.json).
+
+## 99%目標への続編（2026-11-04）
+
+勾配降下や自動フィッティングを行わず、LLMが距離計算の数値係数と10個のバイアスを明示指定した**参照画像型分類器**を追加。実験009〜015は全重み手書きの旧方式とは区別する。最高は開発用99.04%・公式テスト**99.02%（9,902/10,000）**。詳しくは[最終レポート](REPORT_99_PERCENT.md) / [PDF版](REPORT_99_PERCENT.pdf)、[全パラメータ](experiments/exp-015-edge-oriented-manual-metric/parameters.json)、[公式テスト記録](validation/exp015-99percent/results_official_test.json)を参照。
