@@ -1,0 +1,266 @@
+[
+  {
+    "digit": 4,
+    "row_0based": 3,
+    "col_0based": 7,
+    "old": 0.15,
+    "new": -0.7,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 4,
+    "col_0based": 7,
+    "old": -0.12,
+    "new": -0.7,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 3,
+    "col_0based": 8,
+    "old": -0.12,
+    "new": -0.55,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 4,
+    "col_0based": 6,
+    "old": 0.15,
+    "new": -0.55,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 4,
+    "col_0based": 9,
+    "old": 0.6,
+    "new": 1.4,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 5,
+    "col_0based": 9,
+    "old": 0.9,
+    "new": 1.45,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 7,
+    "col_0based": 4,
+    "old": 0.9,
+    "new": 1.4,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 8,
+    "col_0based": 4,
+    "old": 0.35,
+    "new": 1.0,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 7,
+    "col_0based": 9,
+    "old": 0.6,
+    "new": 1.4,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 8,
+    "col_0based": 9,
+    "old": 0.35,
+    "new": 1.1,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 9,
+    "col_0based": 5,
+    "old": 0.15,
+    "new": -0.8,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 10,
+    "col_0based": 5,
+    "old": -0.12,
+    "new": -0.8,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 4,
+    "row_0based": 10,
+    "col_0based": 6,
+    "old": 0.15,
+    "new": -0.75,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 3,
+    "col_0based": 7,
+    "old": 0.6,
+    "new": 1.45,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 4,
+    "col_0based": 7,
+    "old": 0.9,
+    "new": 1.6,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 3,
+    "col_0based": 8,
+    "old": 0.6,
+    "new": 1.35,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 4,
+    "col_0based": 6,
+    "old": 0.9,
+    "new": 1.45,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 7,
+    "col_0based": 4,
+    "old": 0.6,
+    "new": -0.55,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 8,
+    "col_0based": 4,
+    "old": 0.15,
+    "new": -0.65,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 9,
+    "col_0based": 5,
+    "old": 0.15,
+    "new": -0.75,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 10,
+    "col_0based": 4,
+    "old": -0.12,
+    "new": -0.65,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 10,
+    "col_0based": 5,
+    "old": 0.15,
+    "new": -0.75,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 9,
+    "row_0based": 11,
+    "col_0based": 5,
+    "old": 0.15,
+    "new": -0.75,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 5,
+    "row_0based": 5,
+    "col_0based": 4,
+    "old": 0.35,
+    "new": 1.1,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 5,
+    "row_0based": 5,
+    "col_0based": 5,
+    "old": 1.2,
+    "new": 1.5,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 5,
+    "row_0based": 6,
+    "col_0based": 4,
+    "old": 0.6,
+    "new": 1.25,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 5,
+    "row_0based": 5,
+    "col_0based": 8,
+    "old": 0.15,
+    "new": -0.65,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 5,
+    "row_0based": 6,
+    "col_0based": 7,
+    "old": 0.6,
+    "new": -0.55,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 5,
+    "row_0based": 6,
+    "col_0based": 8,
+    "old": 0.6,
+    "new": -0.6,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 7,
+    "row_0based": 7,
+    "col_0based": 5,
+    "old": -0.12,
+    "new": -0.55,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 7,
+    "row_0based": 7,
+    "col_0based": 6,
+    "old": 0.15,
+    "new": -0.55,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 7,
+    "row_0based": 11,
+    "col_0based": 4,
+    "old": 0.15,
+    "new": 0.7,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  },
+  {
+    "digit": 7,
+    "row_0based": 12,
+    "col_0based": 4,
+    "old": 0.15,
+    "new": 0.65,
+    "manual_rationale": "Contrastive stroke edit as described in decision_before_eval.md"
+  }
+]
