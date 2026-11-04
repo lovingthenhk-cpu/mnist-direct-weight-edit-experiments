@@ -1,0 +1,23 @@
+{
+  "experiment": "exp-010-deskew-manual-metric",
+  "architecture": "Fixed second-moment deskew then manually specified 3NN L2/inverse-distance vote; unchanged human-set coefficients and biases",
+  "preprocessing": "deskew_28x28",
+  "distance_weight_literal": 1.0,
+  "number_of_neighbors_literal": 3,
+  "distance_epsilon_literal": 0.1,
+  "class_bias_literals": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "gradient_descent_used": false,
+  "autograd_used": false,
+  "reference_bank": "Raw official MNIST 28x28 images and labels, referenced verbatim (55k for dev/60k for final). This is nonparametric memory, not hand-written network weights."
+}

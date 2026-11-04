@@ -1,0 +1,713 @@
+{
+  "experiment": "exp-010-deskew-manual-metric",
+  "dataset": "dev",
+  "n_reference": 55000,
+  "n_query": 5000,
+  "n_correct": 4898,
+  "accuracy": 0.9796,
+  "gpu": "NVIDIA GeForce RTX 3060 Ti",
+  "device_memory": "CUDA",
+  "seconds": 3.852,
+  "configuration": {
+    "experiment": "exp-010-deskew-manual-metric",
+    "architecture": "Fixed second-moment deskew then manually specified 3NN L2/inverse-distance vote; unchanged human-set coefficients and biases",
+    "preprocessing": "deskew_28x28",
+    "distance_weight_literal": 1.0,
+    "number_of_neighbors_literal": 3,
+    "distance_epsilon_literal": 0.1,
+    "class_bias_literals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gradient_descent_used": false,
+    "autograd_used": false,
+    "reference_bank": "Raw official MNIST 28x28 images and labels, referenced verbatim (55k for dev/60k for final). This is nonparametric memory, not hand-written network weights."
+  },
+  "per_digit_recall": {
+    "0": 0.99339,
+    "1": 0.99476,
+    "2": 0.9863,
+    "3": 0.98611,
+    "4": 0.96653,
+    "5": 0.96396,
+    "6": 0.9919,
+    "7": 0.98375,
+    "8": 0.95825,
+    "9": 0.96746
+  },
+  "confusion_matrix": [
+    [
+      451,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      570,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      504,
+      2,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      497,
+      0,
+      3,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      462,
+      0,
+      3,
+      0,
+      0,
+      10
+    ],
+    [
+      1,
+      1,
+      1,
+      4,
+      0,
+      428,
+      7,
+      0,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      0,
+      0,
+      0,
+      0,
+      490,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      2,
+      0,
+      0,
+      545,
+      0,
+      5
+    ],
+    [
+      1,
+      0,
+      1,
+      6,
+      1,
+      5,
+      1,
+      2,
+      505,
+      5
+    ],
+    [
+      1,
+      0,
+      0,
+      3,
+      6,
+      0,
+      0,
+      5,
+      0,
+      446
+    ]
+  ],
+  "high_confidence_errors": [
+    {
+      "query_index": 8190,
+      "true": 5,
+      "pred": 6,
+      "ref_indices": [
+        33704,
+        28768,
+        6876
+      ],
+      "squared_distances": [
+        8.178,
+        10.2567,
+        13.158
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.90894,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 2044,
+      "true": 6,
+      "pred": 1,
+      "ref_indices": [
+        32334,
+        11504,
+        57436
+      ],
+      "squared_distances": [
+        10.6644,
+        11.5151,
+        11.8748
+      ],
+      "scores": [
+        0.0,
+        0.86538,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 43454,
+      "true": 5,
+      "pred": 3,
+      "ref_indices": [
+        52096,
+        7666,
+        45902
+      ],
+      "squared_distances": [
+        9.1783,
+        11.9888,
+        13.8867
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.86157,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 12692,
+      "true": 5,
+      "pred": 6,
+      "ref_indices": [
+        43125,
+        14940,
+        33178
+      ],
+      "squared_distances": [
+        11.4822,
+        13.0487,
+        15.1672
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.80637,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 54264,
+      "true": 4,
+      "pred": 1,
+      "ref_indices": [
+        21402,
+        5516,
+        23788
+      ],
+      "squared_distances": [
+        12.3905,
+        14.3503,
+        14.9299
+      ],
+      "scores": [
+        0.0,
+        0.78571,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 5896,
+      "true": 8,
+      "pred": 7,
+      "ref_indices": [
+        44271,
+        33964,
+        51832
+      ],
+      "squared_distances": [
+        11.6783,
+        14.6129,
+        15.7997
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.78464,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 46314,
+      "true": 4,
+      "pred": 9,
+      "ref_indices": [
+        35598,
+        30257,
+        3186
+      ],
+      "squared_distances": [
+        14.596,
+        15.367,
+        15.8197
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.74908
+      ]
+    },
+    {
+      "query_index": 47094,
+      "true": 4,
+      "pred": 9,
+      "ref_indices": [
+        22782,
+        9070,
+        28689
+      ],
+      "squared_distances": [
+        16.2388,
+        16.826,
+        16.839
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.71803
+      ]
+    },
+    {
+      "query_index": 26718,
+      "true": 2,
+      "pred": 7,
+      "ref_indices": [
+        26395,
+        20304,
+        29382
+      ],
+      "squared_distances": [
+        16.8087,
+        17.0833,
+        17.8555
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.70552,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 15468,
+      "true": 7,
+      "pred": 9,
+      "ref_indices": [
+        35341,
+        34598,
+        28383
+      ],
+      "squared_distances": [
+        17.2262,
+        17.3058,
+        18.4033
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.69781
+      ]
+    },
+    {
+      "query_index": 12812,
+      "true": 3,
+      "pred": 1,
+      "ref_indices": [
+        1080,
+        4484,
+        12746
+      ],
+      "squared_distances": [
+        16.6397,
+        18.2121,
+        18.5248
+      ],
+      "scores": [
+        0.0,
+        0.69531,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 37921,
+      "true": 0,
+      "pred": 6,
+      "ref_indices": [
+        49104,
+        39430,
+        58549
+      ],
+      "squared_distances": [
+        18.3204,
+        18.3221,
+        18.7328
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.68241,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 13850,
+      "true": 4,
+      "pred": 9,
+      "ref_indices": [
+        15029,
+        8408,
+        52341
+      ],
+      "squared_distances": [
+        17.8554,
+        19.4786,
+        20.7257
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.66768
+      ]
+    },
+    {
+      "query_index": 23911,
+      "true": 1,
+      "pred": 7,
+      "ref_indices": [
+        21412,
+        28106,
+        24006
+      ],
+      "squared_distances": [
+        7.6178,
+        9.7953,
+        11.9254
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.65927,
+        0.0,
+        0.28143
+      ]
+    },
+    {
+      "query_index": 24101,
+      "true": 8,
+      "pred": 9,
+      "ref_indices": [
+        47897,
+        12029,
+        21835
+      ],
+      "squared_distances": [
+        19.439,
+        21.8762,
+        22.5183
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.63749
+      ]
+    },
+    {
+      "query_index": 55792,
+      "true": 9,
+      "pred": 3,
+      "ref_indices": [
+        55377,
+        51332,
+        356
+      ],
+      "squared_distances": [
+        20.9678,
+        21.141,
+        22.5825
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.63267,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 33768,
+      "true": 9,
+      "pred": 7,
+      "ref_indices": [
+        34609,
+        56037,
+        54155
+      ],
+      "squared_distances": [
+        21.1377,
+        22.5577,
+        22.6624
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.62482,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "query_index": 49634,
+      "true": 8,
+      "pred": 9,
+      "ref_indices": [
+        43158,
+        19120,
+        50445
+      ],
+      "squared_distances": [
+        23.8287,
+        24.0495,
+        24.3391
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.59925
+      ]
+    },
+    {
+      "query_index": 33506,
+      "true": 4,
+      "pred": 1,
+      "ref_indices": [
+        3662,
+        40696,
+        4064
+      ],
+      "squared_distances": [
+        9.9863,
+        10.6736,
+        10.9325
+      ],
+      "scores": [
+        0.0,
+        0.59056,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.30674
+      ]
+    },
+    {
+      "query_index": 50391,
+      "true": 9,
+      "pred": 4,
+      "ref_indices": [
+        47680,
+        8755,
+        26546
+      ],
+      "squared_distances": [
+        23.6711,
+        25.6131,
+        28.4825
+      ],
+      "scores": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.57909,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "raw_reference_source": "Official MNIST training images + labels, excluding dev indices in dev mode",
+  "ref_sha256": "3173230dff58d329f790d639903b4651500f5835ae167ade2fba7bbd0d11654b",
+  "disclosure": "The reference bank is a data-based nonparametric model. Its examples and labels are NOT LLM-handwritten weights. Only metric coefficients and class biases are LLM-authored; no automatic fitting or gradients."
+}
